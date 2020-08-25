@@ -1,0 +1,44 @@
+<style>
+.grid{
+  display:grid;
+  grid-template-columns: 50% 50%  ;
+  grid-template-rows: 80px 80px 80px 80px;
+outline-width: 50px;
+  grid-template-areas: "B1 B1 B1 B1"
+  　　　　　　　　　　　 "B2 B2 B2 B2"
+                       "B3 B3 B3 B3"
+                       "B4 B4 B4 B4";
+}
+
+.AA{
+    grid-area B1;
+}
+.BB{
+  grid-area B2;
+}
+.CC{
+  grid-area B3;
+}
+.DD{
+  grid-area B4;
+}
+.grid div:nth-child(odd){
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 50px 50px 50px 50px;
+  grid-template-areas: "B1 B1 B1 B1"
+  　　　　　　　　　　　 "B2 B2 B2 B2"
+                       "B3 B3 B3 B3"
+                       "B4 B4 B4 B4" ;
+  background-color:rgb(211, 200, 211);
+}
+ 
+
+body{
+    background-color: rgb(245, 179, 80);
+    color: #555555;
+    font-family: 標楷體, "DFKai-sb";
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.5em ;
+}
+</style>
